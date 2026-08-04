@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Seu presente está aqui dentro </title>
+<style>
+    .coracoes{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.coracoes span{
+    position:absolute;
+    bottom:-50px;
+    color:#e7c4d0;
+    font-size:24px;
+    opacity:.25;
+    animation:subir 10s linear infinite;
+}
+
+.coracoes span:nth-child(1){
+    left:10%;
+    animation-delay:0s;
+}
+
+.coracoes span:nth-child(2){
+    left:22%;
+    animation-delay:2s;
+    font-size:18px;
+}
+
+.coracoes span:nth-child(3){
+    left:35%;
+    animation-delay:5s;
+}
+
+.coracoes span:nth-child(4){
+    left:48%;
+    animation-delay:1s;
+    font-size:28px;
+}
+
+.coracoes span:nth-child(5){
+    left:62%;
+    animation-delay:4s;
+}
+
+.coracoes span:nth-child(6){
+    left:75%;
+    animation-delay:6s;
+    font-size:20px;
+}
+
+.coracoes span:nth-child(7){
+    left:88%;
+    animation-delay:3s;
+}
+
+.coracoes span:nth-child(8){
+    left:95%;
+    animation-delay:7s;
+    font-size:16px;
+}
+
+@keyframes subir{
+
+    0%{
+        transform:translateY(0) scale(.8);
+        opacity:0;
+    }
+
+    20%{
+        opacity:.25;
+    }
+
+    100%{
+        transform:translateY(-120vh) scale(1.3);
+        opacity:0;
+    }
+
+}
+body {
+margin: 0;
+min-height:100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(176, 57, 101);
+text-align: center;
+}
+.container{
+    width: 80%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(245, 220, 230);
+}
+h1 {
+color:rgb(9, 9, 9);
+font-size:32px;    
+margin-bottom: 15px;
+}
+p {
+color:rgb(51, 50, 50);
+font-size:18px;
+margin-bottom: 15px;
+}
+input {
+    width: 90%;
+    display: block;
+    margin: 0 auto 15px auto;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d48aa2;
+    border-radius:10px;
+}
+button {
+    background-color: rgb(176, 57, 101);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.dica {
+    margin: 15px 0;
+    color: #b85c7a;
+    font-style: italic;
+    font-size: 15px;
+}
+ </style>
+</head>
+<body>
+    <div class="coracoes">
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+</div>
+    <div class="container">
+    <h1> Seu presente está aqui dentro 💌 </h1>
+    <p> Digite a senha para abrir essa surpresa!</p>
+    <p class="dica">
+        💡 Dica: Como nos chamávamos no início de tudo
+    </p>
+    <input type="password" id="senha">
+    <button id="botao-entrar">Entrar</button>
+    <p id="mensagem-erro"></p>
+    </div>
+    <script>
+    const senhacorreta = "vidoca";
+    document.getElementById("botao-entrar").addEventListener("click", function() {
+        const senhadigitada = document.getElementById("senha").value;
+        if (senhadigitada === senhacorreta) {
+            window.location.href = "presente.html";
+        } else {
+         document.getElementById("mensagem-erro").textContent = "Senha incorreta. Tente novamente ❤️!";
+        }
+    })
+    </script>
+</body>
+</html>
+
+
+

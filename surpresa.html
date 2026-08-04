@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História ❤️</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background: linear-gradient(135deg, #f6d6e3, #efbfd2);
+
+    font-family:Georgia, serif;
+    color:#444;
+}
+
+        .introducao{
+
+            min-height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            text-align:center;
+
+            padding:40px;
+
+        }
+
+        .conteudo{
+  max-width:800px;
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+
+}        
+
+        h1{
+
+            color:#d63384;
+
+            font-size:60px;
+
+            margin-bottom:40px;
+
+        }
+
+        p{
+
+            font-size:26px;
+
+            line-height:1.8;
+
+            margin-bottom:22px;
+
+            opacity:0;
+
+            animation:aparecer 1.5s forwards;
+
+        }
+
+        .linha1{animation-delay:1s;}
+        .linha2{animation-delay:3s;}
+        .linha3{animation-delay:5s;}
+        .linha4{animation-delay:7s;}
+
+        .seta{
+
+            margin-top:70px;
+
+            font-size:50px;
+
+            color:#d63384;
+
+            animation:descer 1.5s infinite;
+
+            opacity:0;
+
+            animation-delay:9s;
+            animation-fill-mode:forwards;
+
+        }
+
+        @keyframes aparecer{
+
+            from{
+
+                opacity:0;
+                transform:translateY(20px);
+
+            }
+
+            to{
+
+                opacity:1;
+                transform:translateY(0);
+
+            }
+
+        }
+
+        @keyframes descer{
+
+            0%{
+
+                transform:translateY(0);
+
+            }
+
+            50%{
+
+                transform:translateY(15px);
+
+            }
+
+            100%{
+
+                transform:translateY(0);
+
+            }
+
+        }
+.momento-especial{
+    padding:100px 40px;
+    text-align:center;
+}
+
+.momento-especial h2{
+    font-size:42px;
+    color:#d63384;
+    margin-bottom:60px;
+}
+
+.area-memorias{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
+
+.polaroid{
+    background:white;
+    width:320px;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    transform:rotate(-5deg);
+}
+
+.polaroid img{
+    width:100%;
+    display:block;
+    border-radius:4px;
+}
+.botao-carta{
+    background:#d63384;
+    color:white;
+    border:none;
+    padding:15px 28px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.botao-carta:hover{
+    transform:scale(1.05);
+}
+
+.carta{
+    display:none;
+    background:white;
+    width:380px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    text-align:left;
+}
+
+.carta h3{
+    color:#d63384;
+    margin-bottom:20px;
+}
+
+.carta p{
+    opacity:1;
+    animation:none;
+    font-size:20px;
+    line-height:1.8;
+    margin:0;
+}
+.raio{
+
+    padding:120px 30px;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.raio h2{
+
+    font-size:52px;
+
+    color:#d63384;
+
+    margin-bottom:25px;
+
+}
+
+.frase-raio{
+
+    font-size:24px;
+
+    font-style:italic;
+
+    color:#000
+    ;
+
+    margin-bottom:60px;
+
+}
+
+.texto-raio{
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+.texto-raio p{
+ color:#000;
+    opacity:1;
+
+    animation:none;
+
+    font-size:24px;
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+
+}
+
+.destaque{
+
+    margin-top:60px;
+
+    font-size:34px !important;
+
+    color:#d63384;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   RAIOS
+=========================== */
+
+.raios{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin-bottom:30px;
+
+}
+
+.raios span{
+
+    font-size:34px;
+
+    animation:piscar 2s ease-in-out infinite;
+
+}
+
+.raios span:nth-child(2){
+
+    animation-delay:.3s;
+
+}
+
+.raios span:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+.raios span:nth-child(4){
+
+    animation-delay:.9s;
+
+}
+
+.raios span:nth-child(5){
+
+    animation-delay:1.2s;
+
+}
+
+@keyframes piscar{
+
+    0%{
+
+        transform:translateY(0);
+
+        opacity:.4;
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+        opacity:.4;
+
+    }
+
+}
+.polaroid p{
+    margin-top:15px;
+    font-size:22px;
+}
+.carta-raio{
+
+    background:white;
+
+    max-width:850px;
+
+    margin:40px auto;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    text-align:center;
+}
+.detalhes{
+
+    padding:120px 40px;
+
+}
+
+.detalhes h2{
+
+    text-align:center;
+
+    font-size:48px;
+
+    color:#000;
+
+    margin-bottom:80px;
+
+}
+
+.item{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    margin-bottom:90px;
+
+    flex-wrap:wrap;
+
+}
+
+.reverso{
+
+    flex-direction:row-reverse;
+
+}
+
+.polaroid-pequena{
+
+    background:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+.polaroid-pequena img,
+.polaroid-pequena video{
+
+    width:280px;
+
+    border-radius:6px;
+
+    display:block;
+
+}
+
+.texto-item{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    max-width:420px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.texto-item h3{
+
+    color:#d63384;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+.texto-item p{
+
+    opacity:1;
+
+    animation:none;
+
+    color:#000;
+
+    text-align:center;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+.final{
+
+    padding:150px 40px;
+
+    background:linear-gradient(#f8d6e4,#f5bdd5);
+
+}
+
+.final-conteudo{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.final h2{
+
+    font-size:50px;
+
+    color:#000;
+
+    margin-bottom:25px;
+
+}
+
+.frase-final{
+
+    opacity:1;
+
+    animation:none;
+
+    color:#444;
+
+    font-size:26px;
+
+    margin-bottom:70px;
+
+}
+
+.carta-final{
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+    text-align:left;
+
+    margin:0 auto;
+
+    max-width:900px;
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    transition:all .8s ease;
+
+}
+
+.carta-final h3{
+
+    text-align:center;
+
+    color:#d63384;
+
+    font-size:36px;
+
+    margin-bottom:40px;
+
+}
+.carta-final.aberta{
+
+    max-height:6000px;
+
+    opacity:1;
+
+    padding:60px;
+
+}
+
+.carta-final p{
+
+    opacity:1;
+
+    animation:none;
+
+    font-size:24px;
+
+    line-height:2;
+
+    color:#333;
+
+    white-space:pre-line;
+
+}
+
+.feliz{
+
+    margin-top:100px;
+
+    color:#d63384;
+
+    font-size:60px;
+
+}
+
+.assinatura{
+
+    opacity:1;
+
+    animation:none;
+
+    font-size:26px;
+
+    color:#444;
+
+    margin-top:30px;
+
+    font-style:italic;
+
+}
+.epilogo{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 30px;
+
+    background:linear-gradient(180deg,#f5bdd5,#fff8fb);
+
+}
+
+.epilogo-conteudo{
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+.coracao-final{
+
+    font-size:70px;
+
+    animation:pulsar 2s infinite;
+
+}
+
+.epilogo h2{
+
+    margin-top:30px;
+
+    font-size:38px;
+
+    color:#555;
+
+    font-weight:300;
+
+}
+
+.epilogo h1{
+
+    margin-top:15px;
+
+    font-size:68px;
+
+    color:#d63384;
+
+    margin-bottom:50px;
+
+}
+
+.epilogo p{
+
+    opacity:1;
+
+    animation:none;
+
+    color:#333;
+
+    font-size:28px;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+.continua{
+
+    margin-top:70px;
+
+    font-size:36px;
+
+    color:#d63384;
+
+    font-style:italic;
+
+    letter-spacing:2px;
+
+}
+
+@keyframes pulsar{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+.coracoes{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.coracoes span{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    color:#f7a9c1;
+
+    animation:subir linear infinite;
+
+    opacity:.45;
+
+}
+
+@keyframes subir{
+
+    0%{
+
+        transform:translateY(0) scale(.8);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:.45;
+
+    }
+
+    100%{
+
+        transform:translateY(-120vh) scale(1.3);
+
+        opacity:0;
+
+    }
+
+}
+.coracoes{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.coracoes span{
+    position:absolute;
+    bottom:-40px;
+    animation:subir linear infinite;
+    opacity:.45;
+}
+
+@keyframes subir{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-120vh);
+    }
+
+}
+.botao-carta{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.botao-carta button{
+
+    background:#d63384;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 40px;
+
+    border-radius:40px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.botao-carta button:hover{
+
+    transform:scale(1.05);
+
+    background:#be2b72;
+
+}
+    </style>
+
+</head>
+<body>
+    <div class="coracoes">
+
+    <span style="left:5%; animation-duration:12s; font-size:18px;">❤️</span>
+
+    <span style="left:15%; animation-duration:18s; font-size:24px;">🤍</span>
+
+    <span style="left:28%; animation-duration:14s; font-size:20px;">❤️</span>
+
+    <span style="left:40%; animation-duration:20s; font-size:28px;">🤍</span>
+
+    <span style="left:52%; animation-duration:15s; font-size:18px;">❤️</span>
+
+    <span style="left:67%; animation-duration:17s; font-size:26px;">🤍</span>
+
+    <span style="left:79%; animation-duration:13s; font-size:20px;">❤️</span>
+
+    <span style="left:90%; animation-duration:19s; font-size:24px;">🤍</span>
+
+</div>
+
+<section class="introducao">
+
+<section class="introducao">
+
+    <div class="conteudo">
+
+        <h1>Para você ❤️</h1>
+
+        <p class="linha1">
+            Há algumas coisas que eu gostaria que você soubesse
+        </p>
+
+        <p class="linha2">
+            Mas antes de tudo, quero te pedir apenas uma coisa
+        </p>
+
+        <p class="linha3">
+            Role essa página bem devagar
+        </p>
+
+        <p class="linha4">
+            Porque cada pedacinho dela foi feito pensando em você!
+        </p>
+
+        <div class="seta">
+            ↓
+        </div>
+    </div>
+</section>
+<section class="momento-especial">
+ <h2>Nossa primeira lembrança ❤️</h2>
+
+    <div class="area-memorias">
+
+        <div class="polaroid">
+            <img src="imagens/Foto 1.jpeg" alt="Nossa primeira foto">
+            <p>O recomeço de tudo.</p>
+        </div>
+        <button onclick="abrirCarta()" class="botao-carta">
+    💌 Ler minha carta
+</button>
+
+<div id="carta" class="carta">
+
+    <h3>Para você ❤️</h3>
+
+    <p>
+        Meu amor, </p>
+
+<p>No dia em que tiramos essa foto, que, até então, era apenas a versão repaginada da nossa foto de 2023, fiz uma oração em silêncio. Pedi que aquele instante fosse apenas o começo de todas as fotos, memórias e momentos que ainda viveríamos juntas.</p>
+
+<p>Mal imaginava eu, e talvez você também, que uma simples mensagem de Feliz Ano Novo, uma saídinha para tomar uns drinks e um encontro naquele antigo bar da Barra Funda seriam o início de uma história tão bonita. Uma história que nos renderia incontáveis sorrisos, lembranças e tantos momentos especiais para guardar no coração.</p>
+
+<p>Revisitando as nossas conversas, encontrei a mensagem em que você me enviou essa foto. Naquele dia, estávamos falando sobre as nossas metas para o ano. Você me perguntou qual era a minha, e eu respondi que queria apenas ser feliz, e que isso você já estava fazendo muito bem. Então você disse que a sua meta era ser feliz comigo.</p>
+
+<p>Hoje, quase um ano e meio depois, acho que podemos dizer, com o coração cheio de certeza, que estamos cumprindo muito bem as nossas metas. E o mais bonito de tudo é que estamos realizando esse sonho juntas.</p>
+
+</div>
+</section>
+<script>
+function abrirCarta() {
+    document.getElementById("carta").style.display = "block";
+}
+</script>
+</section>
+<section class="raio">
+
+    <div class="raios">
+        <span>⚡</span>
+        <span>⚡</span>
+        <span>⚡</span>
+        <span>⚡</span>
+        <span>⚡</span>
+    </div>
+
+    <h2>O raio caiu duas vezes</h2>
+
+    <p class="frase-raio">
+        Dizem que um raio nunca cai duas vezes no mesmo lugar.
+    </p>
+
+    <div class="carta-raio">
+
+        <p>
+            Talvez eles estejam certos.
+        </p>
+
+        <p>
+            Mas esqueceram de avisar o nosso amor.
+        </p>
+
+        <p>
+            Houve um tempo em que seguimos caminhos diferentes.
+            Um tempo em que parecia que a nossa história tinha chegado ao fim.
+        </p>
+
+        <p>
+            E quando tudo parecia improvável...
+            a vida resolveu nos colocar frente a frente mais uma vez.
+        </p>
+
+        <p>
+            Não foi sorte.
+        </p>
+
+        <p>
+            Não foi coincidência.
+        </p>
+
+        <p>
+            Foi a nossa história escolhendo continuar.
+        </p>
+
+        <p class="destaque">
+
+            Porque, às vezes...
+
+            <br><br>
+
+            o raio realmente cai duas vezes
+            no mesmo lugar. ⚡❤️
+
+        </p>
+
+    </div>
+    <section class="detalhes">
+
+    <h2>Os detalhes que me fizeram me apaixonar por você ❤️</h2>
+
+</section>
+   <div class="item reverso">
+
+    <div class="polaroid-pequena">
+        <video controls>
+            <source src="imagens/vídeo 1 ovelha.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="texto-item">
+
+        <h3>As nossas bobagens</h3>
+
+        <p>
+            Eu amo que com você eu nunca preciso fingir ser alguém diferente.
+            As nossas brincadeiras, as nossas risadas e até as coisas mais
+            sem sentido acabam se tornando algumas das minhas lembranças favoritas.
+        </p>
+
+    </div>
+
+</div>
+</section>
+<section class="detalhes">
+
+    <h2>Os detalhes que me fizeram me apaixonar por você ❤️</h2>
+
+    <!-- FOTO 2 -->
+
+    <div class="item">
+
+        <div class="polaroid-pequena">
+            <img src="imagens/foto 2 beijo.jpeg">
+        </div>
+
+        <div class="texto-item">
+
+            <h3>O nosso beijo</h3>
+
+            <p>
+                Eu amo como um simples beijo seu consegue fazer o resto do mundo desaparecer por alguns segundos. É como se, naquele instante, existíssemos apenas nós duas.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- VIDEO 1 -->
+
+    <div class="item reverso">
+
+        <div class="polaroid-pequena">
+
+            <video controls>
+                <source src="imagens/vídeo 2 banho.mp4">
+            </video>
+
+        </div>
+
+        <div class="texto-item">
+
+            <h3>A sua risada</h3>
+
+            <p>
+                Acho que nunca vou me cansar de ouvir você rir. É um daqueles sons que conseguem melhorar qualquer dia, qualquer momento e qualquer lugar.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FOTO 3 -->
+
+    <div class="item">
+
+        <div class="polaroid-pequena">
+            <img src="imagens/foto 3 com a zara.jpeg">
+        </div>
+
+        <div class="texto-item">
+
+            <h3>O seu coração</h3>
+
+            <p>
+                Ver você com a Zarinha sempre aquece o meu coração. O jeito que você cuida dela diz muito sobre quem você é, e é impossível não admirar essa pessoa tão especial.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FOTO 4 -->
+
+    <div class="item reverso">
+
+        <div class="polaroid-pequena">
+            <img src="imagens/foto 4 deitada.jpeg">
+        </div>
+
+        <div class="texto-item">
+
+            <h3>A paz</h3>
+
+            <p>
+                Existem momentos tão simples que quase passam despercebidos. Mas são justamente eles que ficam guardados para sempre. Ver você tranquila, ao lado da Zarinha, é uma dessas imagens que eu nunca quero esquecer.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- VIDEO 2 -->
+
+    <div class="item">
+
+        <div class="polaroid-pequena">
+
+            <video controls>
+                <source src="imagens/vídeo 3 beijinhos.mp4">
+            </video>
+
+        </div>
+
+        <div class="texto-item">
+
+            <h3>O nosso cantinho</h3>
+
+            <p>
+                Não importa se estamos fazendo alguma coisa especial ou apenas deitadas juntas. Os momentos mais simples ao seu lado sempre acabam sendo os que eu mais gosto de guardar na memória.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FOTO 5 -->
+
+    <div class="item reverso">
+
+        <div class="polaroid-pequena">
+            <img src="imagens/foto 5 mãos dadas.jpeg">
+        </div>
+
+        <div class="texto-item">
+
+            <h3>A nossa escolha</h3>
+
+            <p>
+                Essas alianças representam muito mais do que um anel. Elas me lembram que todos os dias nós escolhemos continuar construindo a nossa história.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FOTO 6 -->
+
+    <div class="item">
+
+        <div class="polaroid-pequena">
+            <img src="imagens/foto 6 espelho.jpeg">
+        </div>
+
+        <div class="texto-item">
+
+            <h3>O meu lugar favorito</h3>
+
+            <p>
+                Entre todos os lugares do mundo, o meu preferido continua sendo qualquer lugar onde eu possa demonstrar o quanto eu amo você.
+            </p>
+
+        </div>
+
+    </div>
+    <!-- FOTO 7 -->
+
+    <div class="item">
+
+        <div class="polaroid-pequena">
+            <img src="imagens/foto 7 parque.jpeg">
+        </div>
+
+        <div class="texto-item">
+
+            <h3>O meu lar</h3>
+
+            <p>
+                Durante muito tempo eu achei que lar era um lugar. Hoje eu sei que lar é sentir paz, carinho e amor. E, por sorte, eu encontro tudo isso quando estou com você.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="final">
+
+    <div class="final-conteudo">
+
+        <h2>Ainda tem mais uma coisa... ✨</h2>
+
+        <p class="frase-final">
+            Antes de terminar, eu preciso te contar algo.
+        </p>
+
+       <div class="botao-carta">
+
+    <button onclick="abrirCartaFinal()">
+        💌 Abrir minha carta
+    </button>
+</div>
+
+<div class="carta-final" id="cartaFinal">
+            <h3>Para o amor da minha vida ❤️</h3>
+
+           <p>Meu amor,</p>
+
+    <p>
+        Se você chegou até aqui, significa que acabou de reviver alguns dos momentos mais especiais da nossa história. Talvez tenham ficado muitos outros de fora, mas acho que você conseguiu perceber a intenção de cada foto, de cada vídeo e de cada palavra escrita nessa página.
+    </p>
+
+    <p>
+        Tudo isso foi feito porque eu queria encontrar uma forma diferente de te lembrar do quanto você é importante para mim.
+    </p>
+
+    <p>
+        Eu ainda lembro da primeira vez em que imaginei como seria viver tudo isso ao seu lado. Naquela época, eu jamais poderia imaginar que colecionaríamos tantas memórias, tantas risadas, tantos abraços, tantos beijos e tantos momentos simples que hoje significam tanto para mim.
+    </p>
+
+    <p>
+        A gente costuma brincar que o raio não cai duas vezes no mesmo lugar. E, por muito tempo, eu também achei que algumas histórias, quando terminavam, simplesmente terminavam.
+    </p>
+
+    <p>
+        Mas a nossa provou exatamente o contrário.
+    </p>
+
+    <p>
+        O nosso recomeço me ensinou que algumas pessoas aparecem na nossa vida para ficar. Não porque tudo é perfeito, mas porque existe amor, vontade de construir, de aprender, de crescer e de escolher uma à outra todos os dias.
+    </p>
+
+    <p>
+        Obrigada por cada risada, por cada conversa, pelos momentos de silêncio, pelos vídeos bobos que hoje fazem parte das minhas lembranças favoritas, pelos shows e por todos os nossos passeios. Mas, acima de tudo, obrigada por abrir as portas da sua vida e da sua família para mim. Obrigada por me permitir conhecer pessoas tão especiais e por me deixar criar um carinho imenso pela Zarinha. Aos poucos, eu fui percebendo que não era só você que fazia eu me sentir em casa, mas tudo aquilo que faz parte da sua vida. E confesso que é impossível não sonhar que, um dia, eu possa chamar essa família de minha também.
+    </p>
+
+    <p>
+        Eu admiro a mulher incrível que você é. O seu carinho, o seu coração, o jeito como cuida de quem ama, a sua força, a sua coragem e a paz que você leva para onde passa são apenas algumas das infinitas razões pelas quais eu me apaixono por você todos os dias.
+    </p>
+
+    <p>
+        Hoje é o seu aniversário, mas quem ganhou o maior presente fui eu: ter encontrado alguém com quem eu quero dividir a minha vida.
+    </p>
+
+    <p>
+        Que venham muitos aniversários, muitas viagens, muitos domingos preguiçosos, muitos docinhos cheios de Nutella, muitos shows, os nossos cachorrinhos correndo pela casa, o nosso futuro bebezinho lindo, que, se depender de mim, vai herdar os seus olhinhos e essa boquinha que eu tanto amo, e uma vida inteira de novas lembranças para escrevermos e vivermos juntas.
+    </p>
+
+    <p>
+        E, se um dia alguém disser que o raio não cai duas vezes no mesmo lugar...
+    </p>
+
+    <p>
+        Nós duas sabemos que ele caiu.
+    </p>
+
+    <p>
+        E foi a melhor coisa que poderia ter acontecido.
+    </p>
+
+    <p>
+        Feliz aniversário, meu amor.
+    </p>
+
+    <p>
+        Obrigada por transformar a minha vida de um jeito que eu nunca imaginei ser possível. Obrigada por me fazer acreditar, todos os dias, que o amor pode ser leve, verdadeiro, seguro e cheio de paz. Que este seja apenas mais um dos incontáveis capítulos da nossa história, porque, se depender de mim, eu ainda quero viver uma vida inteira ao seu lado.
+    </p>
+
+    <p style="text-align:center; margin-top:40px; font-size:28px; color:#d63384; font-weight:bold;">
+        Eu te amo.
+    </p>
+
+    <p style="text-align:center; font-size:24px; font-style:italic;">
+        Ainda bem que deu tudo certo entre a gente, minha gata ❤️
+    </p>
+</div>
+</div>
+</section>
+<section class="epilogo">
+
+    <div class="epilogo-conteudo">
+
+        <div class="coracao-final">❤️</div>
+
+        <h2>O site termina aqui por enquanto...</h2>
+
+        <h1>A nossa história, não.</h1>
+
+        <p>
+            Nós temos uma vida inteirinha juntas daqui para frente. Vamos preencher essas páginas?
+        </p>
+
+        <p>
+            E eu espero, do fundo do meu coração,
+            viver cada uma delas com você.
+        </p>
+
+        <div class="continua">
+
+            Continua...
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+function abrirCartaFinal() {
+
+    const carta = document.getElementById("cartaFinal");
+
+    carta.classList.add("aberta");
+
+    document.querySelector(".botao-carta").style.display = "none";
+
+}
+</script>
+</body>
+</html>

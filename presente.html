@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            font-family: Georgia, serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Fundo das animações */
+
+        .background {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        /* Corações */
+
+        .coracoes span {
+            position: absolute;
+            bottom: -60px;
+            color: rgba(255, 105, 180, .35);
+            font-size: 22px;
+            animation: subir linear infinite;
+        }
+
+        .coracoes span:nth-child(1){left:5%; animation-duration:10s; animation-delay:0s;}
+        .coracoes span:nth-child(2){left:15%; animation-duration:13s; animation-delay:2s; font-size:18px;}
+        .coracoes span:nth-child(3){left:28%; animation-duration:11s; animation-delay:4s;}
+        .coracoes span:nth-child(4){left:40%; animation-duration:15s; animation-delay:1s; font-size:30px;}
+        .coracoes span:nth-child(5){left:52%; animation-duration:12s; animation-delay:6s;}
+        .coracoes span:nth-child(6){left:64%; animation-duration:14s; animation-delay:3s; font-size:20px;}
+        .coracoes span:nth-child(7){left:76%; animation-duration:11s; animation-delay:7s;}
+        .coracoes span:nth-child(8){left:86%; animation-duration:16s; animation-delay:2s; font-size:18px;}
+        .coracoes span:nth-child(9){left:93%; animation-duration:12s; animation-delay:5s;}
+        .coracoes span:nth-child(10){left:98%; animation-duration:15s; animation-delay:8s;}
+
+        /* Estrelas */
+
+        .estrelas span{
+            position:absolute;
+            width:3px;
+            height:3px;
+            background:white;
+            border-radius:50%;
+            animation:piscar 3s infinite;
+        }
+
+        .estrelas span:nth-child(1){top:8%;left:10%;}
+        .estrelas span:nth-child(2){top:20%;left:30%;}
+        .estrelas span:nth-child(3){top:10%;left:60%;}
+        .estrelas span:nth-child(4){top:30%;left:80%;}
+        .estrelas span:nth-child(5){top:55%;left:15%;}
+        .estrelas span:nth-child(6){top:70%;left:45%;}
+        .estrelas span:nth-child(7){top:80%;left:90%;}
+        .estrelas span:nth-child(8){top:45%;left:70%;}
+        .estrelas span:nth-child(9){top:85%;left:30%;}
+        .estrelas span:nth-child(10){top:18%;left:95%;}
+
+        /* Caixa do conteúdo */
+
+        .container{
+            position:relative;
+            z-index:2;
+            width:90%;
+            max-width:900px;
+            text-align:center;
+            padding:20px;
+        }
+
+        h1{
+            color:#ff5c8d;
+            font-size:58px;
+            margin-bottom:45px;
+            opacity:0;
+            animation:fade 2s forwards;
+        }
+
+        p{
+            font-size:25px;
+            line-height:1.8;
+            margin-bottom:22px;
+            opacity:0;
+            animation:fade 1.5s forwards;
+        }
+
+        .linha1{animation-delay:1.5s;}
+        .linha2{animation-delay:3.5s;}
+        .linha3{animation-delay:5.5s;}
+        .linha4{animation-delay:7.5s;}
+
+        button{
+            margin-top:45px;
+            padding:18px 45px;
+            border:none;
+            border-radius:50px;
+            background:#ff5c8d;
+            color:white;
+            font-size:20px;
+            cursor:pointer;
+            transition:.3s;
+            opacity:0;
+            animation:fade 1.5s forwards;
+            animation-delay:9.5s;
+        }
+
+        button:hover{
+            transform:scale(1.05);
+            background:#ff3b79;
+        }
+
+        @keyframes fade{
+            from{
+                opacity:0;
+                transform:translateY(20px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        @keyframes subir{
+            0%{
+                transform:translateY(0) scale(.8);
+                opacity:0;
+            }
+
+            15%{
+                opacity:.35;
+            }
+
+            100%{
+                transform:translateY(-120vh) scale(1.4);
+                opacity:0;
+            }
+        }
+
+        @keyframes piscar{
+            0%,100%{
+                opacity:.2;
+            }
+
+            50%{
+                opacity:1;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="background">
+
+    <div class="coracoes">
+        <span>❤</span>
+        <span>❤</span>
+        <span>❤</span>
+        <span>❤</span>
+        <span>❤</span>
+        <span>❤</span>
+        <span>❤</span>
+        <span>❤</span>
+        <span>❤</span>
+        <span>❤</span>
+    </div>
+
+    <div class="estrelas">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <h1>Feliz aniversário, meu amor ❤️</h1>
+
+    <p class="linha1">
+        Pensei muito em como poderia dizer o quanto você é especial e importante para mim.
+    </p>
+
+    <p class="linha2">
+        Então resolvi fazer algo diferente...
+    </p>
+
+    <p class="linha3">
+        Cada linha deste site foi feita por mim, pensando em cada detalhe, para que você sentisse um pouquinho do quanto eu te amo.
+    </p>
+
+    <p class="linha4">
+        Espero que você aproveite essa surpresa tanto quanto eu gostei de prepará-la.
+    </p>
+
+    <button onclick="window.location.href='surpresa.html'">
+        Começar ❤️
+    </button>
+
+</div>
+
+</body>
+
+</html>
