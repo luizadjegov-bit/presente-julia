@@ -24,21 +24,18 @@
     font-family:Georgia, serif;
     color:#444;
 }
+.introducao{
+    min-height:100vh;
 
-        .introducao{
+    display:flex;
+    justify-content:center;
 
-            min-height:100vh;
+    align-items:flex-start;
 
-            display:flex;
-            justify-content:center;
-            align-items:center;
+    text-align:center;
 
-            text-align:center;
-
-            padding:40px;
-
-        }
-
+    padding:70px 20px;
+}
         .conteudo{
   max-width:800px;
 
@@ -898,12 +895,57 @@
     .raio{
         padding:60px 20px;
     }
-
+.introducao{
+    align-items:flex-start;
+}
     .botao-carta button{
         width:100%;
         max-width:320px;
         font-size:20px;
     }
+}
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .introducao{
+        align-items:flex-start;
+        padding:60px 20px;
+    }
+
+    .area-memorias,
+    .item{
+        flex-direction:column;
+    }
+
+    .polaroid,
+    .polaroid-pequena,
+    .texto-item,
+    .carta-final{
+        width:100%;
+        max-width:100%;
+    }
+
+    img,
+    video{
+        width:100%;
+        height:auto;
+    }
+
+    h1{
+        font-size:42px;
+    }
+
+    h2{
+        font-size:34px;
+    }
+
+    p{
+        font-size:20px;
+    }
+
 }
     </style>
 
