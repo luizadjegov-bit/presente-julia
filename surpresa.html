@@ -36,18 +36,20 @@
 
     padding:70px 20px;
 }
-        .conteudo{
-  max-width:800px;
+.conteudo{
+    width: 100%;
+    max-width: 800px;
 
-    background:white;
+    background: white;
 
-    padding:60px;
+    padding: 60px;
 
-    border-radius:25px;
+    border-radius: 25px;
 
-    box-shadow:0 20px 60px rgba(0,0,0,.12);
+    box-shadow: 0 20px 60px rgba(0,0,0,.12);
 
-}        
+    box-sizing: border-box;
+}
 
         h1{
 
@@ -905,6 +907,7 @@
         font-size:20px;
     }
 }
+
 @media (max-width:768px){
 
     body{
@@ -946,18 +949,22 @@
     p{
         font-size:20px;
     }
-@media (max-width: 768px) {
 
-    .texto {
-        width: 90%;
-        max-width: none;
-        margin: 0 auto;
-    }
- 
     .conteudo {
         width: 90%;
         max-width: none;
         margin: 0 auto;
+    }
+
+    .conteudo h1 {
+        font-size: 32px;
+        white-space: nowrap;
+    }
+
+    .conteudo p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.5;
     }
 
 }
